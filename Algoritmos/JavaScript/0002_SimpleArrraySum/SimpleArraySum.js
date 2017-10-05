@@ -2,8 +2,9 @@ console.log("Simple Array Sum");
 
 function qtdNumbers(a){
 
-    for(i = 0; i < a.length; i++){
-
+    for(i = 0; i < a ; i++){
+        console.log(i);
+        var inp = [];
         inp[i] = document.createElement("input");
         inp[i].type = "number"
         inp[i].id = "inp" + i;
