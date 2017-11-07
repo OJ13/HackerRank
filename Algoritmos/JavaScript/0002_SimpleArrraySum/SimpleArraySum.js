@@ -5,7 +5,6 @@ var inp = [];
 function qtdNumbers(a){
 
     for(i = 0; i < a ; i++){
-        console.log(i);
         inp[i] = document.createElement("input");
         inp[i].type = "number"
         inp[i].id = "inp" + i;
@@ -43,21 +42,18 @@ function main() {
     // var result = simpleArraySum(n, ar);
     // process.stdout.write("" + result + "\n");
     if(!inp){
-        console.log(inp);
         document.getElementById('lblResultado').innerText = "Insira valores nas caixas"
     }else{
-        console.log(inp);
         var result = simpleArraySum2(inp);
-        console.log(result);
         document.getElementById('lblResultado').innerText = result;
     }
 }
 
 function simpleArraySum2(ar){
-
     var resultado = 0;
-    for(var i = 0; i < ar; i++){
-        
-        resultado = resultado + ar[i].value;
+    for(var i = 0; i < ar.length; i++){
+
+        resultado = resultado + parseInt(ar[i].value);
     }    
+    return resultado;
 }
