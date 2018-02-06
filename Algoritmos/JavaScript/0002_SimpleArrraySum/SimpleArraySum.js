@@ -9,7 +9,7 @@ function qtdNumbers(a){
         inp[i].type = "number"
         inp[i].id = "inp" + i;
         
-        document.body.appendChild(inp[i]);
+        document.getElementById("numbers").appendChild(inp[i]);
     }
 }
 
